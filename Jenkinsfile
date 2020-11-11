@@ -10,7 +10,8 @@ pipeline {
         }
         stage('Fluffy Test') {
           steps {
-            sh "sleep 10"
+            sh "cd $(pwd)/target'
+	    archiveArtifacts(artifacts: '$(pwd)/target/*.txt', fingerprint: true)
 	    echo "Test Done"
             }
         }
