@@ -4,7 +4,7 @@ pipeline {
         stage('Buzz Build') {
             steps {
                 echo "Fluffy Build Stage"
-		sh 'cd pwd/first/'
+		sh 'cd $(pwd)/first/'
 		sh 'python hello.py'
             } 
         }
