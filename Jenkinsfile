@@ -1,11 +1,11 @@
 pipeline {
     agent { label 'master' }
     stages {
-        stage('Fluffy Build') {
+        stage('Buzz Build') {
             steps {
                 echo "Fluffy Build Stage"
-		echo "pushing to Test Branch"
-		sh 'pwd'
+		sh 'cd pwd/first/'
+		sh 'python hello.py'
             } 
         }
         stage('Fluffy Test') {
