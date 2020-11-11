@@ -4,6 +4,7 @@ pipeline {
         stage('Fluffy Build') {
             steps {
                 echo "Fluffy Build Stage"
+		echo "pushing to Test Branch"
             } 
         }
         stage('Fluffy Test') {
