@@ -5,7 +5,7 @@ pipeline {
             steps {
                 echo "Fluffy Build Stage"
 		sh 'cd $(pwd)/first/'
-		sh 'python hello.py'
+		sh 'python $(pwd/first/hello.py'
             } 
         }
         stage('Fluffy Test') {
