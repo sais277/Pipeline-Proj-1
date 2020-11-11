@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Fluffy Test') {
           steps {
-	    archiveArtifacts(artifacts: 'target/*.txt', fingerprint: true)
+	    archiveArtifacts(artifacts: 'target/*.zip', fingerprint: true)
 	    echo "Test Done"
             }
         }
