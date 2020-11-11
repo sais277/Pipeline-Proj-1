@@ -5,6 +5,7 @@ pipeline {
             steps {
                 echo "Fluffy Build Stage"
 		echo "pushing to Test Branch"
+		sh 'pwd'
             } 
         }
         stage('Fluffy Test') {
